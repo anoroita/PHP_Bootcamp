@@ -1,10 +1,11 @@
 #!/usr/bin/php
 <?php
-    if ($argc > 1){
-        $array = array_values(array_filter(explode(' ', $argv[1])));
-		$array[count($array)] = $array[0];
-		unset($array[0]);
-        foreach ($array as $v)
-            $ret .= $v." ";
-        echo trim($ret)."\n";
-    }
+
+	$exploded = explode(" ", $argv[1]);
+	$filtered = array_filter($exploded);
+	$sliced = array_slice($filtered, 0, 1);
+	$filtered = array_splice($filtered, 1);
+	foreach ($filtered as $value)
+		echo $value." ";
+	echo $sliced[0]."\n";
+?>

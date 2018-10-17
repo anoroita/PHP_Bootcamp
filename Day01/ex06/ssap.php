@@ -1,12 +1,14 @@
 #!/usr/bin/php
 <?php
-    $array = array();
-    unset($argv[0]);
-    foreach($argv as $v){
-        $tmp = array_filter(explode(' ', $v));
-        foreach ($tmp as $v2)
-            $array[] = $v2;
-    }
-    sort($array);
-    foreach ($array as $v)
-        echo $v."\n";
+	$stack = [];
+	for ($i = 1; $i < $argc; $i++)
+	{
+		$exploded = explode(" ", $argv[$i]);
+			foreach ($exploded as $value)
+				array_push($stack, $value);
+	}
+	$filtered = array_filter($stack);
+	sort($filtered);
+	foreach ($filtered as $value)
+		echo $value."\n";
+?>

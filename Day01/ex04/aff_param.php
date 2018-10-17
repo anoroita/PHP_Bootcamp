@@ -1,5 +1,5 @@
 #!/usr/bin/php
 <?php
-    unset($argv[0]);
-    foreach($argv as $v)
-        echo $v."\n";
+for ($i = 1; $i < $argc; $i++)
+	echo $argv[$i]."\n";
+?>

@@ -1,159 +1,208 @@
 body {
-    background-color: #505050;
-    margin: 18px 0 0 8px;
+	background-color: #505050
 }
-
-.page {
-    margin: 0 auto;
-    width: 1420px;
-}
-
-header {
-    height: 137px;
-    width: 1420px;
-    position: relative;
-}
-
-header, .menu, .menu2, .content, .form {
-    border-radius: 9px;
-    box-shadow: 10px 10px 10px #000000;
-    background-color: #909090;
-}
-
-header img.logo {
-    height: 110px;
-    margin: 10px 0 0 10px;
-}
-
-header img.search {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-}
-
-header img.delete, header img.refresh {
-    position: absolute;
-    right: 10px;
-    height: 20px;
-    width: 20px;
-}
-
-header .delete {
-    bottom: 10px;
-}
-
-header .refresh {
-    top: 10px;
-}
-
-.menu{
-    width: 108px;
-    height: 410px;
-    float: left;
-    margin: 20px 0 0 30px;
-    padding: 15px 0 0 32px;
-}
-
-.menu img {
-    width: 70px;
-    margin-bottom: 6px;
-}
-
-.menu2 img {
-    width: 70px;
-    margin-bottom: 6px;
-}
-
-.menu img.selected {
-    border: 5px solid red;
-    margin: -5px 0 1px -5px;
-    border-radius: 5px;
-}
-
-.menu2{
-    width: 105px;
-    height: 410px;
-    float: left;
-    margin: 20px 0 0 30px;
-    padding: 15px 0 0 35px;
-}
-
-.menu2 .wall {
-    content: '';
-    background-image: url('resources/brick.jpg');
-    width: 120px;
-    height: 70px;
-    margin:-5px 0 0 -25px;
-}
-
-.menu2 img {
-    width: 70px;
-    margin-bottom: 6px;
-}
-
 .content {
-    margin: 20px 0 0 30px;
-    width: 1020px;
-    height: 582px;
-    float: left;
-    position: relative;
+	background: #505050;
+	height: 870px;
+	width: 1400px;
+	margin: auto;
+	border-radius: 15px;
+	position: relative;
 }
 
-.content img {
-    margin: 10px;
-    width: 1000px;
-    height: 562px;
+.top {
+	background: #909090;
+	height: 119px;
+	width: 1400px;
+	margin: auto;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 5px 10px 10px
 }
-
+.close {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+.reload {
+	position: absolute;
+ 	max-width: 19%;
+	max-height: 19%;
+	right: 5px;
+	top: 5px;
+}
+.loupe {
+	position: absolute;
+	right: 20px;
+ 	max-width: 110%;
+	max-height: 110%;
+}
+.day42 {
+ 	border-radius: 15px;
+ 	position: absolute;
+ 	max-width: 100%;
+	max-height: 100%;
+}
+.bottom {
+	background: #505050;
+	height: 1000px;
+	width: 1400px;
+	position: absolute;
+	top: 140px;
+}
+.cluster-frame {
+	background: #909090;
+	border-radius: 15px;
+	height: 570px;
+	width: 950px;
+	margin: auto;
+	position: relative;
+	box-shadow: 5px 10px 10px
+}
+.ikea {
+	background: transparent;
+	height: 200px;
+	width: 150px;
+	position: absolute;
+	bottom: 25px;
+	left: 300px;
+}
+.apple {
+	background: transparent;
+	height: 180px;
+	width: 190px;
+	position: absolute;
+	bottom: 80px;
+	right: 20px;
+}
+.cluster {
+	height: 550px;
+	width: 930px;
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+}
+.left-frame {
+	background: #909090;
+	border-radius: 15px;
+	height: 490px;
+	width: 190px;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	box-shadow: 5px 10px 10px;
+}
+.arrow {
+ 	
+ 	max-width: 47%;
+	max-height: 47%;
+	position: absolute;
+	left: 53px;
+	top: 10px;
+	display: block Advance;
+}
+.main {
+ 	max-width: 50%;
+	max-height: 50%;
+	position: absolute;
+	left: 50px;
+	top: 105px;
+}
+.oeil {
+	position: absolute;
+	left: 63px;
+	top: 210px;
+}
+.outil {
+ 	max-width: 44%;
+	max-height: 44%;
+	position: absolute;
+	left: 60px;
+	top: 290px;
+}
+.chat-icon {
+ 	max-width: 44%;
+	max-height: 44%;
+	position: absolute;
+	left: 60px;
+	top: 390px;
+}
+.right-frame {
+	background: #909090;
+	border-radius: 15px;
+	height: 490px;
+	width: 190px;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	box-shadow: 5px 10px 10px;
+}
+.book {
+ 	max-width: 55%;
+	max-height: 55%;
+	position: absolute;
+	right: 40px;
+	top: 10px;
+}
+.towel {
+	max-width: 65%;
+	max-height: 65%;
+	position: absolute;
+	right: 32px;
+	top: 150px;
+}
+h6 {
+	background: url(resources/brick.jpg);
+	width: 160px;
+	height: 120px;
+	position: absolute;
+	right: 15px;
+	top: 250px;
+}
+.brick1 {
+	position: absolute;
+	right: 15px;
+	top: 250px;
+}
+.message {
+	background-color: #88FF89;
+	box-shadow: 5px 10px 10px;
+	border-radius: 15px;
+	height: 250px;
+	width: 600px;
+	position: absolute;
+	left: -100px;
+	bottom: 0;
+}
+p {
+	word-spacing: 6pt;
+	font-family: sans-serif;
+	position: absolute;
+	left: 10px;
+}
+h5 {
+	width: 200px;
+}
+p1 {
+	font-style: italic;
+}
+word1 {
+	font-size: 36pt;
+	font-family: serif;
+}
+word2 {
+	text-shadow: 5px 5px 2px;
+}
 .form {
-    background-color: #88ff89;
-    width: 500px;
-    height: 150px;
-    position: absolute;
-    bottom: -94px;
-    left: -245px;
-    padding: 10px;
-    font-family: arial;
-    font-size: 16px;
-    font-stretch: expanded !important;
-    letter-spacing: 1px;
-    font-weight: 300;
+	display: inline;
+	font-size: 23px;
+	position: absolute;
+	bottom: 110px;
+	left: 10px;
 }
 
-.form span.big {
-    font-family: Times;
-    font-size: 31px;
-}
-
-.form span.shadow {
-    text-shadow: 5px 5px 5px #ff0000;
-}
-
-.form span.italic {
-    font-style: italic;
-}
-
-.form form {
-    height: 22px;
-}
-
-.form form input[type="text"] {
-    margin-left: 2px;
-    width: 376px;
-    border: 2px solid #9d969d;
-    border-bottom-color: #eeeeee;
-    border-right-color: #eeeeee;
-    height: 15px;
-}
-
-.form form input[type="submit"] {
-    border: 1px solid #a8a4a5;
-    border-radius: 1px;
-    background-color: #f4eff3;
-    background: #0079FF;
-    margin-left: 4px;
-    height: 22px;
-    font-size:12px;
-    letter-spacing: 1px;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
+input {
+	display: inline;
 }

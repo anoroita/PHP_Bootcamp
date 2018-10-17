@@ -1,9 +1,7 @@
 #!/usr/bin/php
 <?php
-    if ($argc == 2) {
-        $array = array_filter(explode(' ', $argv[1]));
-        $final = "";
-        foreach($array as $v)
-            $final .= $v." ";
-        echo trim($final)."\n";
-    }
+	$exploded = explode(" ", $argv[1]); 
+	$filtred = array_filter($exploded);
+	echo implode(" ", $filtred);
+	echo "\n";
+?>
